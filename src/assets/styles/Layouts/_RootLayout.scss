@@ -1,0 +1,166 @@
+@use "../Root/Root";
+
+.Layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem 0;
+
+  .Header {
+    position: sticky;
+    top: 1rem;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    max-height: 8rem;
+    height: 100%;
+
+    @media (prefers-color-scheme: dark) {
+      .Header-LayoutContainer {
+        background-color: Root.$dark-items;
+      }
+    }
+    
+    .Header-LayoutContainer {
+      backdrop-filter: blur(12px);
+      max-width: Root.$xl;
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      padding: Root.$p-none;
+      margin: Root.$mx-auto;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: Root.$light-items;
+      border-radius: Root.$radius-full;
+
+      @media only screen and (max-width: Root.$xl) {
+        max-width: Root.$lg;
+      }
+  
+      @media only screen and (max-width: Root.$lg) {
+        max-width: Root.$md;
+      }
+  
+      @media only screen and (max-width: Root.$md) {
+        max-width: Root.$sm;
+      }
+  
+      @media only screen and (max-width: Root.$sm) {
+        max-width: Root.$xs;
+      }
+    }
+
+    .Header-Navbar {
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      list-style: none;
+      padding: 0 0 0 1rem;
+      gap: 0 0.5rem;
+
+      .Header-NavbarItem {
+        width: fit-content;
+        height: fit-content;
+        font-size: Root.$text-sm;
+
+        .Header-NavbarLink {
+          width: fit-content;
+          text-decoration: none;
+          color: Root.$dark;
+          background-color: transparent;
+          padding: 0.25rem 1rem;
+          border-radius: Root.$radius-full;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            background-color: Root.$dark;
+            color: Root.$light;
+          }
+        }
+
+        .Header-NavbarLink--Actived {
+          width: fit-content;
+          text-decoration: none;
+          color: Root.$dark;
+          background-color: Root.$dark;
+          color: Root.$light;
+          padding: 0.25rem 1rem;
+          border-radius: Root.$radius-full;
+        }
+      }
+    }
+  }
+
+  // main
+  main {
+    width: 100%;
+  }
+
+  // Footer
+  .Footer {
+    width: 100%;
+    max-height: 18rem;
+    height: 16rem;
+    overflow: hidden;
+    padding: Root.$pb-4;
+    
+    @media (prefers-color-scheme: dark) {
+      .Footer-LayoutContainer {
+        background-color: Root.$dark-items;
+      }
+    }
+
+    .Footer-LayoutContainer {
+      max-width: Root.$xl;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1rem;
+      margin: 0 auto;
+      background-color: Root.$light-items;
+      width: 100%;
+
+
+      @media only screen and (max-width: Root.$xl) {
+        max-width: Root.$lg;
+      }
+  
+      @media only screen and (max-width: Root.$lg) {
+        max-width: Root.$md;
+      }
+  
+      @media only screen and (max-width: Root.$md) {
+        max-width: Root.$sm;
+      }
+  
+      @media only screen and (max-width: Root.$sm) {
+        max-width: Root.$xs;
+      }
+
+      .Footer-SocialContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .Footer-LogoName {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          h2 {
+            padding: Root.$p-none;
+            margin: Root.$m-none;
+          }
+        }
+      }
+    }
+  }
+}

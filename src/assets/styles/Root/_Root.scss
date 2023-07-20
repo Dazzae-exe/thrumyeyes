@@ -1,0 +1,260 @@
+// root variables
+
+// screens
+$xl: 80rem;
+$lg: 65rem;
+$md: 48rem;
+$sm: 28.125rem;
+$xs: 20rem;
+
+// colors
+$light: rgba(242, 242, 242, 1);
+$dark: rgba(89, 89, 89, 1);
+$light-items: rgb(165, 165, 165, 0.75);
+$dark-items: rgb(127, 127, 127, 0.75);
+
+// text weight
+$thin: 300;
+$normal: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+
+// text size
+$text-base: 1rem;
+$text-sm: 0.875rem;
+$text-md: 1.125rem;
+$text-lg: 1.375rem;
+$text-xl: 1.75rem;
+$text-h1: 3.25rem;
+$text-h2: 2.75rem;
+$text-h3: 2.25rem;
+
+// margin && padding
+$m-none: 0;
+$mx-auto: 0 auto 0 auto;
+$m-auto: 0 auto;
+$p-none: 0;
+$p-auto: 0 auto;
+
+// margin global
+$m-1: 0.25rem;
+$m-2: 0.5rem;
+$m-3: 0.75rem;
+$m-4: 1rem;
+$m-5: 1.25rem;
+$m-6: 1.5rem;
+$m-7: 1.75rem;
+$m-8: 2rem;
+$m-9: 2.25rem;
+$m-10: 2.5rem;
+$m-11: 2.75rem;
+$m-12: 3rem;
+$m-13: 3.25rem;
+$m-14: 3.5rem;
+$m-15: 3.75rem;
+$m-16: 4rem;
+$m-17: 4.25rem;
+$m-18: 4.5rem;
+$m-19: 4.75rem;
+$m-20: 5rem;
+// margin top
+$mt-1: 0.25rem 0 0 0;
+$mt-2: 0.5rem 0 0 0;
+$mt-3: 0.75rem 0 0 0;
+$mt-4: 1rem 0 0 0;
+$mt-5: 1.25rem 0 0 0;
+$mt-6: 1.5rem 0 0 0;
+$mt-7: 1.75rem 0 0 0;
+$mt-8: 2rem 0 0 0;
+$mt-9: 2.25rem 0 0 0;
+$mt-10: 2.5rem 0 0 0;
+$mt-11: 2.75rem 0 0 0;
+$mt-12: 3rem 0 0 0;
+$mt-13: 3.25rem 0 0 0;
+$mt-14: 3.5rem 0 0 0;
+$mt-15: 3.75rem 0 0 0;
+$mt-16: 4rem 0 0 0;
+$mt-17: 4.25rem 0 0 0;
+$mt-18: 4.5rem 0 0 0;
+$mt-19: 4.75rem 0 0 0;
+$mt-20: 5rem 0 0 0;
+// margin right
+$mr-1: 0 0.25rem 0 0;
+$mr-2: 0 0.5rem 0 0;
+$mr-3: 0 0.75rem 0 0;
+$mr-4: 0 1rem 0 0;
+$mr-5: 0 1.25rem 0 0;
+$mr-6: 0 1.5rem 0 0 0;
+$mr-7: 0 1.75rem 0 0;
+$mr-8: 0 2rem 0 0;
+$mr-9: 0 2.25rem 0 0;
+$mr-10: 0 2.5rem 0 0;
+$mr-11: 0 2.75rem 0 0;
+$mr-12: 0 3rem 0 0;
+$mr-13: 0 3.25rem 0 0;
+$mr-14: 0 3.5rem 0 0;
+$mr-15: 0 3.75rem 0 0;
+$mr-16: 0 4rem 0 0;
+$mr-17: 0 4.25rem 0 0;
+$mr-18: 0 4.5rem 0 0;
+$mr-19: 0 4.75rem 0 0;
+$mr-20: 0 5rem 0 0;
+// margin bottom
+$mb-1: 0 0 0.25rem 0;
+$mb-2: 0 0 0.5rem 0;
+$mb-3: 0 0.75rem 0;
+$mb-4: 0 0 1rem 0;
+$mb-5: 0 0 1.25rem 0;
+$mb-6: 0 0 1.5rem 0 0;
+$mb-7: 0 0 1.75rem 0;
+$mb-8: 0 0 2rem 0;
+$mb-9: 0 0 2.25rem 0;
+$mb-10: 0 0 2.5rem 0;
+$mb-11: 0 0 2.75rem 0;
+$mb-12: 0 0 3rem 0;
+$mb-13: 0 0 3.25rem 0;
+$mb-14: 0 0 3.5rem 0;
+$mb-15: 0 0 3.75rem 0;
+$mb-16: 0 0 4rem 0;
+$mb-17: 0 0 4.25rem 0;
+$mb-18: 0 0 4.5rem 0;
+$mb-19: 0 0 4.75rem 0;
+$mb-20: 0 0 5rem 0;
+// margin left
+$ml-1: 0 0 0 0.25rem;
+$ml-2: 0 0 0 0.5rem;
+$ml-3: 0 0 0 0.75rem;
+$ml-4: 0 0 0 1rem;
+$ml-5: 0 0 0 1.25rem;
+$ml-6: 0 0 0 1.5rem;
+$ml-7: 0 0 0 1.75rem;
+$ml-8: 0 0 0 2rem;
+$ml-9: 0 0 0 2.25rem;
+$ml-10: 0 0 0 2.5rem;
+$ml-11: 0 0 0 2.75rem;
+$ml-12: 0 0 0 3rem;
+$ml-13: 0 0 0 3.25rem;
+$ml-14: 0 0 0 3.5rem;
+$ml-15: 0 0 0 3.75rem;
+$ml-16: 0 0 0 4rem;
+$ml-17: 0 0 0 4.25rem;
+$ml-18: 0 0 0 4.5rem;
+$ml-19: 0 0 0 4.75rem;
+$ml-20: 0 0 0 5rem;
+
+// padding global
+$p-1: 0.25rem;
+$p-2: 0.5rem;
+$p-3: 0.75rem;
+$p-4: 1rem;
+$p-5: 1.25rem;
+$p-6: 1.5rem;
+$p-7: 1.75rem;
+$p-8: 2rem;
+$p-9: 2.25rem;
+$p-10: 2.5rem;
+$p-11: 2.75rem;
+$p-12: 3rem;
+$p-13: 3.25rem;
+$p-14: 3.5rem;
+$p-15: 3.75rem;
+$p-16: 4rem;
+$p-17: 4.25rem;
+$p-18: 4.5rem;
+$p-19: 4.75rem;
+$p-20: 5rem;
+// padding top
+$pt-1: 0.25rem 0 0 0;
+$pt-2: 0.5rem 0 0 0;
+$pt-3: 0.75rem 0 0 0;
+$pt-4: 1rem 0 0 0;
+$pt-5: 1.25rem 0 0 0;
+$pt-6: 1.5rem 0 0 0;
+$pt-7: 1.75rem 0 0 0;
+$pt-8: 2rem 0 0 0;
+$pt-9: 2.25rem 0 0 0;
+$pt-10: 2.5rem 0 0 0;
+$pt-11: 2.75rem 0 0 0;
+$pt-12: 3rem 0 0 0;
+$pt-13: 3.25rem 0 0 0;
+$pt-14: 3.5rem 0 0 0;
+$pt-15: 3.75rem 0 0 0;
+$pt-16: 4rem 0 0 0;
+$pt-17: 4.25rem 0 0 0;
+$pt-18: 4.5rem 0 0 0;
+$pt-19: 4.75rem 0 0 0;
+$pt-20: 5rem 0 0 0;
+// padding right
+$pr-1: 0 0.25rem 0 0;
+$pr-2: 0 0.5rem 0 0;
+$pr-3: 0 0.75rem 0 0;
+$pr-4: 0 1rem 0 0;
+$pr-5: 0 1.25rem 0 0;
+$pr-6: 0 1.5rem 0 0 0;
+$pr-7: 0 1.75rem 0 0;
+$pr-8: 0 2rem 0 0;
+$pr-9: 0 2.25rem 0 0;
+$pr-10: 0 2.5rem 0 0;
+$pr-11: 0 2.75rem 0 0;
+$pr-12: 0 3rem 0 0;
+$pr-13: 0 3.25rem 0 0;
+$pr-14: 0 3.5rem 0 0;
+$pr-15: 0 3.75rem 0 0;
+$pr-16: 0 4rem 0 0;
+$pr-17: 0 4.25rem 0 0;
+$pr-18: 0 4.5rem 0 0;
+$pr-19: 0 4.75rem 0 0;
+$pr-20: 0 5rem 0 0;
+// padding bottom
+$pb-1: 0 0 0.25rem 0;
+$pb-2: 0 0 0.5rem 0;
+$pb-3: 0 0.75rem 0;
+$pb-4: 0 0 1rem 0;
+$pb-5: 0 0 1.25rem 0;
+$pb-6: 0 0 1.5rem 0 0;
+$pb-7: 0 0 1.75rem 0;
+$pb-8: 0 0 2rem 0;
+$pb-9: 0 0 2.25rem 0;
+$pb-10: 0 0 2.5rem 0;
+$pb-11: 0 0 2.75rem 0;
+$pb-12: 0 0 3rem 0;
+$pb-13: 0 0 3.25rem 0;
+$pb-14: 0 0 3.5rem 0;
+$pb-15: 0 0 3.75rem 0;
+$pb-16: 0 0 4rem 0;
+$pb-17: 0 0 4.25rem 0;
+$pb-18: 0 0 4.5rem 0;
+$pb-19: 0 0 4.75rem 0;
+$pb-20: 0 0 5rem 0;
+// padding left
+$pl-1: 0 0 0 0.25rem;
+$pl-2: 0 0 0 0.5rem;
+$pl-3: 0 0 0 0.75rem;
+$pl-4: 0 0 0 1rem;
+$pl-5: 0 0 0 1.25rem;
+$pl-6: 0 0 0 1.5rem;
+$pl-7: 0 0 0 1.75rem;
+$pl-8: 0 0 0 2rem;
+$pl-9: 0 0 0 2.25rem;
+$pl-10: 0 0 0 2.5rem;
+$pl-11: 0 0 0 2.75rem;
+$pl-12: 0 0 0 3rem;
+$pl-13: 0 0 0 3.25rem;
+$pl-14: 0 0 0 3.5rem;
+$pl-15: 0 0 0 3.75rem;
+$pl-16: 0 0 0 4rem;
+$pl-17: 0 0 0 4.25rem;
+$pl-18: 0 0 0 4.5rem;
+$pl-19: 0 0 0 4.75rem;
+$pl-20: 0 0 0 5rem;
+
+// border-radius
+$radius: 1.25rem;
+$radius-full: 62.4375rem;
+
+// line-height
+$small: 1.25;
+$medium: 1.375;
+$large: 1.5;

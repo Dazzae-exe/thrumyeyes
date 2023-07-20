@@ -1,0 +1,71 @@
+@use "../Root/Root";
+
+.Avatar-Container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    grid-column: 1 / 12;
+    gap: 0 1rem;
+    border-radius: Root.$radius;
+
+    @media only screen and (max-width: Root.$sm) {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .Avatar-RoundedProfile {
+        width: fit-content;
+        height: fit-content;
+        padding: 0 1rem;
+        
+        img {
+            width: 16rem;
+            height: 16rem;
+            border-radius: Root.$radius-full;
+
+            @media only screen and (max-width: Root.$md) {
+                width: 12rem;
+                height: 12rem;
+            }
+        }
+    }
+
+    .Avatar-Profile {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: flex-start;
+        flex-flow: column wrap;
+
+        @media only screen and (max-width: Root.$sm) {
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 4rem;
+            text-align: start;
+            margin: Root.$m-none;
+
+            @media only screen and (max-width: Root.$md) {
+                font-size: Root.$text-h2;
+            }   
+        }
+
+        .Avatar-ProfileList {
+            width: fit-content;
+            height: fit-content;
+            margin: Root.$m-none;
+            padding: Root.$p-none;
+            list-style: none;
+
+            .Avatar-ProfileListItem {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+    }
+
+}

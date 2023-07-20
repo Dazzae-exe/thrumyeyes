@@ -1,0 +1,40 @@
+{
+  "opts": [
+    {
+      "title": "Title 1",
+      "imgUrl": "https://images.unsplash.com/photo-1688382955791-8ccc956c5f91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "cameraUsed": "Nikon",
+      "imgDescription": "This is a beautiful description about the place where the picture was taken."
+    },
+    {
+      "title": "Title 2",
+      "imgUrl": "https://images.unsplash.com/photo-1688406180155-59396dcb9815?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80",
+      "cameraUsed": "Nikon",
+      "imgDescription": "This is a beautiful description about the place where the picture was taken."
+    },
+    {
+      "title": "Title 3",
+      "imgUrl": "https://images.unsplash.com/photo-1684327507961-6453b3059006?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+      "cameraUsed": "Nikon",
+      "imgDescription": "This is a beautiful description about the place where the picture was taken."
+    },
+    {
+      "title": "Title 4",
+      "imgUrl": "https://images.unsplash.com/photo-1688149893355-591b530e1ad4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80",
+      "cameraUsed": "Nikon",
+      "imgDescription": "This is a beautiful description about the place where the picture was taken."
+    },
+    {
+      "title": "Title 5",
+      "imgUrl": "https://images.unsplash.com/photo-1552376865-27e2890ae563?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=727&q=80",
+      "cameraUsed": "Nikon",
+      "imgDescription": "This is a beautiful description about the place where the picture was taken."
+    },
+    {
+      "title": "Title 6",
+      "imgUrl": "https://images.unsplash.com/photo-1688121244779-5b42d7d32275?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=691&q=80",
+      "cameraUsed": "Nikon",
+      "imgDescription": "This is a beautiful description about the place where the picture was taken."
+    }
+  ]
+}

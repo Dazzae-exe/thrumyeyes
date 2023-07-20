@@ -1,0 +1,119 @@
+@use "../Root/Root";
+
+.FormContact-Container {
+  width: 100%;
+  max-height: 37.5rem;
+  height: 37.5rem;
+  grid-column: 1 / 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  border-radius: Root.$radius;
+  gap: 2rem;
+  overflow: hidden;
+
+  @media only screen and (max-width: Root.$md) {
+    grid-column: 1 / 12;
+  }
+
+  .FormContact-LogoSvg {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 10rem;
+      height: 10rem;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .FormContact-Form {
+    width: 100%;
+    max-width: 18.75rem;
+    height: fit-content;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    gap: 1.2rem 0;
+
+    .FormContact-FormWrapper {
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.25rem 0;
+
+      .FormContact-LabelItem {
+        width: 100%;
+        height: fit-content;
+        text-align: left;
+        font-weight: Root.$normal;
+      }
+
+      .FormContact-InputItem {
+        width: 100%;
+        height: fit-content;
+        text-align: left;
+        padding: 0.5rem 0.5rem;
+        outline: none;
+        border: none;
+        border-radius: Root.$radius;
+        background-color: Root.$light-items;
+      }
+
+      .FormContact-Events--Error {
+        width: 100%;
+        height: fit-content;
+        text-align: left;
+        color: #F25C54;
+        font-size: Root.$text-sm;
+      }
+    }
+
+    .FormContact-SubmitBtn {
+      width: 100%;
+      height: fit-content;
+      align-self: center;
+      border-radius: Root.$radius-full;
+      outline: none;
+      border: none;
+      padding: 0.5rem 0.5rem;
+      background-color: Root.$dark-items;
+    }
+  }
+}
+
+.FormContact-LayoutImg {
+  width: 100%;
+  max-height: 37.5rem;
+  height: 37.5rem;
+  grid-column: 6 / 12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: Root.$radius;
+
+  @media only screen and (max-width: Root.$md) {
+    display: none;
+  }
+
+  svg {
+    width: 28rem;
+    height: 28rem;
+
+    @media only screen and (max-width: Root.$lg) {
+        width: 26rem;
+        height: 26rem;
+    }
+  }
+}

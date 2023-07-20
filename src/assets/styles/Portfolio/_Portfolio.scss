@@ -1,0 +1,99 @@
+@use "../Root/Root";
+
+.Portfolio-Container {
+  grid-column: 4 / 12;
+  width: 100%;
+  min-height: 80vh;
+  height: 80vh;
+  border-radius: Root.$radius;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 3rem 0;
+  overflow: hidden;
+
+  @media only screen and (max-width: Root.$md) {
+    grid-column: 1 / 12;
+    height: 65vh;
+    min-height: 65vh;
+  }
+
+  @media only screen and (max-width: Root.$sm) {
+    height: 70vh;
+  }
+
+  .Portfolio-ImgContainer {
+    width: 100%;
+    height: 100%;
+    margin: Root.$m-none;
+    padding: Root.$p-none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .Portfolio-Img {
+      width: 90%;
+      height: 65vh;
+      border-radius: Root.$radius;
+
+      @media only screen and (max-width: Root.$md) {
+        width: 100%;
+        height: 50vh;
+      }
+    }
+  }
+
+  @media only screen and (max-width: Root.$md) {
+    width: 100%;
+  }
+
+  .Portfolio-IconInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    left: 2rem;
+
+    @media only screen and (max-width: Root.$md) {
+      left: 0;
+    }
+
+    svg {
+      cursor: pointer;
+    }
+
+    span {
+      font-size: Root.$text-sm;
+      font-weight: Root.$thin;
+    }
+  }
+
+  .Portfolio-Content {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0.5rem 0;
+
+    h2,
+    h3 {
+      text-align: left;
+      margin: Root.$m-none;
+    }
+
+    p {
+      text-align: left;
+      margin: Root.$m-none;
+    }
+  }
+}
+
+.Portfolio-Container--Full {
+  height: 100%;
+  overflow: visible;
+}

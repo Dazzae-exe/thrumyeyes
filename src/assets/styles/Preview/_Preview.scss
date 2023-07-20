@@ -1,0 +1,52 @@
+@use "../Root/Root";
+
+.Preview-Container {
+  grid-column: 1 / 12;
+  width: 100%;
+  height: 20rem;
+  border-radius: Root.$radius;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+
+  .Preview-List {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding: Root.$p-none;
+    margin: Root.$m-none;
+    gap: 2rem;
+
+    @media only screen and (max-width: Root.$md) {
+      overflow-x: scroll;
+    }
+
+    .Preview-ListItem {
+      width: 250px;
+      height: 250px;
+
+      @media only screen and (max-width: Root.$md) {
+        width: fit-content;
+        height: fit-content;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        object-fit: fill;
+        object-position: center;
+        border-radius: Root.$radius;
+
+        @media only screen and (max-width: Root.$md) {
+          width: 250px;
+          height: 250px;
+        }
+      }
+    }
+  }
+}

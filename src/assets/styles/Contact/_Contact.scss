@@ -1,0 +1,27 @@
+@use "../Root/Root";
+
+.Contact-GridSystem {
+    max-width: Root.$xl;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    gap: 2rem 0.5rem;
+    margin: Root.$mx-auto;
+
+    @media only screen and (max-width: Root.$xl) {
+        max-width: Root.$lg;
+      }
+  
+      @media only screen and (max-width: Root.$lg) {
+        max-width: Root.$md;
+      }
+  
+      @media only screen and (max-width: Root.$md) {
+        max-width: Root.$sm;
+      }
+  
+      @media only screen and (max-width: Root.$sm) {
+        max-width: Root.$xs;
+      }
+}

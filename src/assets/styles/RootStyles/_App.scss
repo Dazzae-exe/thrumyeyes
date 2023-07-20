@@ -1,0 +1,9 @@
+@use '../Root/Root';
+
+#root {
+  max-width: Root.$xl;
+  width: 100%;
+  height: fit-content;
+  margin: Root.$m-auto;
+  text-align: center;
+}

@@ -1,0 +1,25 @@
+@use "../Root/Root";
+
+.Profile-Container {
+    grid-column: 1 / 12;
+    width: 100%;
+    height: fit-content;
+    border-radius: Root.$radius;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem 0;
+    background-color: Root.$light-items;
+
+    @media (prefers-colors-schema: dark) {
+        background-color: Root.$dark-items;
+    }
+    
+    .Profile-Text {
+        text-align: left;
+        margin: Root.$m-none;
+        padding: Root.$p-4;
+        font-size: Root.$text-lg;
+        font-weight: Root.$normal;;
+    }
+    
+}

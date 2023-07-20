@@ -1,0 +1,25 @@
+@use "../Root/Root";
+
+:root {
+  font-family: system-ui, -apple-system, sans-serif;
+  color-scheme: light dark;
+  color: Root.$dark;
+  background-color: Root.$light;
+}
+
+svg {
+  overflow: initial;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: Root.$light;
+    background-color: Root.$dark;
+  }
+}
+
+body {
+  margin: Root.$m-auto;
+  padding: Root.$p-none;
+  box-sizing: border-box;
+}

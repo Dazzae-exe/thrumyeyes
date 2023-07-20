@@ -1,0 +1,73 @@
+@use "../Root/Root" as Root;
+
+.Slider-Container {
+  position: sticky;
+  top: 8rem;
+  left: 0;
+  grid-column: 1 / 4;
+  width: 100%;
+  height: 80vh;
+  border-radius: Root.$radius;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  @media only screen and (max-width: Root.$md) {
+    grid-column: 1 / 12;
+    position: relative;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: fit-content;
+  }
+
+  .Slider-List {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 80vh;
+    padding: 0;
+    margin: 0;
+    gap: Root.$p-2;
+    overflow-y: scroll;
+
+    @media only screen and (max-width: Root.$md) {
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      gap: 0 1.5rem;
+    }
+
+    .Slider-ListItem {
+      width: 100%;
+      min-height: 12.5rem;
+      height: 12.5rem;
+      cursor: pointer;
+
+      @media only screen and (max-width: Root.$md) {
+        width: fit-content;
+        height: fit-content;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        object-position: center;
+        border-radius: Root.$radius;
+
+        @media only screen and (max-width: Root.$md) {
+          width: 16rem;
+          height: 16rem;
+        }
+      }
+    }
+  }
+}
